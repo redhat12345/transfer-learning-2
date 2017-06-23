@@ -33,7 +33,6 @@ def extract_features(file_name, train_or_test):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
-    # Todo maybe move to mode, method, inputs format
     modes = ['train', 'test']
     parser = argparse.ArgumentParser()
     parser.add_argument('--mode', type=str, default=modes[0], choices=modes,
