@@ -16,7 +16,7 @@ This repository contains code for transfer learning using pretrained Inception n
 
 
 ### Pretrained CNN codes
-Pretrained CNN codes for CIFAR-100 are available here: 
+Pretrained CNN codes are available here: 
 https://drive.google.com/open?id=0B6fInPVjwoO1d0kzUTY1OVBtbDg
 
 ### Testing
