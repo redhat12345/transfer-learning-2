@@ -1,4 +1,3 @@
-# Importing matplotlib should happen before importing tensorpack
 import argparse
 import logging
 import matplotlib
@@ -84,7 +83,6 @@ def plot_tsne_cnncodes(save_path, max_examples = 1000):
     scipy.misc.imsave('{}_tsne_orig_imgs.jpg'.format(save_path), img)
 
 
-# def __main TODO: add main with command options
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
     modes = ['plot_examples', 'plot_hog', 'plot_cnn']
