@@ -103,6 +103,6 @@ if __name__ == '__main__':
         plot_examples(examples, 'examples_hog.png', plot_hog=True)
 
     elif args.mode == 'plot_cnn': # Plots t-SNE embeddings of the examples
-        plot_tsne_cnncodes()
+        plot_tsne_cnncodes('cnn')
     else:
         logging.warning('Uknown mode. Possible values: {}'.format(', '.join(modes)))
