@@ -37,12 +37,16 @@ Extract CNN codes for the training examples:
 
 Examples from test dataset, output stored in examples.png:  
 ```python plotting.py --mode plot_examples```
+<img src="figures/cifar10_examples.png" width="600"/>
 
 Examples from test dataset and their HOG features, outputs stored in examples.png and examples_hog.png:  
-```python plotting.py --mode plot_examples```
+```python plotting.py --mode plot_hog```
+<img src="figures/cifar10_examples_hog.png" width="600"/>
 
 T-SNE embedding of test examples with class segmentation and original images:  
-```python plotting.py --mode plot_cnn```
+```python plotting.py --mode plot_cnn```  
+<center><img src="figures/cnncodes.png" width="600" align="middle" /> </center>  
+<img src="figures/cnncodes_imgs.jpg" width="500" align="middle"/>  
 
 ### Classification
 
@@ -51,7 +55,18 @@ Available classification methods include: softmax_raw, svm_raw, svm_hog, svm_hog
 Example:  
 `python classify.py --mode svm_cnn`
 
+| Method        | Accuracy           |
+| ------------- |:-------------:|
+| Linear SVM on HOG features      | 46.9% |
+| Kernelized SVM on HOG features      | 31.4%      |
+| Linear SVM on CNN codes | 89.6%      |
+| Kernelized SVM on CNN codes | 86.6%      |
+| Optimized Linear SVM on CNN codes | **90.6%**      |
+
 ### Bayesian Optimisation
 
 For tunning the hyperparamters. Example:  
 `python bayes_opt.py --mode linear`
+
+<img src="figures/bo_converg.png" width="500" align="middle"/>  
+<img src="figures/bo_acqui_func.png" width="500" align="middle"/>  
