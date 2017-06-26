@@ -40,12 +40,12 @@ Examples from test dataset, output stored in examples.png:
 <img src="figures/cifar10_examples.png" width="600"/>
 
 Examples from test dataset and their HOG features, outputs stored in examples.png and examples_hog.png:  
-```python plotting.py --mode plot_hog```
+```python plotting.py --mode plot_hog```  
 <img src="figures/cifar10_examples_hog.png" width="600"/>
 
 T-SNE embedding of test examples with class segmentation and original images:  
 ```python plotting.py --mode plot_cnn```  
-<center><img src="figures/cnncodes.png" width="600" align="middle" /> </center>  
+<center><img src="figures/cnncodes.png" width="500" align="middle" /> </center>  
 <img src="figures/cnncodes_imgs.jpg" width="500" align="middle"/>  
 
 ### Classification
